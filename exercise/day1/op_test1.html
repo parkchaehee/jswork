@@ -13,21 +13,19 @@
 <body>
   <script>
     let x = 0, y = 1;
-    let temp; //임시변수
+    let temp;   //임시 변수
 
     document.write("교환 전<br>")
-    document.write("x= " + x + ", y= " +  y);
+    document.write("x=" + x + ", y=" + y);
     document.write("<br><br>")
-    //교환 처리
-    document.write("교환 후<br>")
 
+    //교환 처리
     temp = x;
     x = y;
     y = temp;
-
-    document.write("x= " + x + ", y= " +  y);
-
-
+    
+    document.write("교환 후<br>")
+    document.write("x=" + x + ", y=" + y);
   </script>
 </body>
 </html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3의 배수 찾기</title>
+  <style>
+    body{
+      text-align: center;
+    }
+    div{color: red; font-weight: bold;}
+  </style>
+</head>
+<body>
+  <h1>3의 배수 찾기</h1>
+  <script >
+    let num = prompt("몇까지 3의 배수를 찾을까요?");
+    let count = 0;
+
+    if(num == null){
+      alert("입력이 취소되었습니다");
+    }else if(isNaN(num)){
+      alert("숫자를 입력해주세요");
+    }else{
+      num = parseInt(num); //입력받은 문자를 숫자로 변환
+      for(i=1; i<=num; i++){
+        if(i%3==0){
+          document.write(i + ", ");
+          count++;
+        }
+      }
+      document.write("<div><br>" + num + "까지 3의 배수의 개수 : "
+         + count + "</div>");
+    }
+    
+  </script>
+</body>
+</html>

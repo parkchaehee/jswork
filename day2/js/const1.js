@@ -1,22 +1,23 @@
-//const1.js
-//상수(Constant Variable)
-
+// 상수(Constant Variable)
+// 변수
 let current_year = 2023;
 current_year = 2022;
 
 console.log(current_year);
 
-//상수 - 재할당, 변경불가
+//상수 - 재할당 할수 없음
 const MONTH = 12;
-//MONTH = 13; 재할당불가
+//MONTH = 13;
 
 console.log("1년은 " + MONTH + "달이 있습니다.");
 
 //원의 넓이 계산하기
-// circleArea = PI * radius * radius;
+// circleArea = PI * 반지름 * 반지름
 const PI = 3.14;
-let radius = 4;
+let radius = 5;
 let circleArea;
+
+//PI = 4.14;
 
 //연산
 circleArea = PI * radius * radius;
@@ -25,13 +26,17 @@ circleArea = PI * radius * radius;
 //document.write("원의 넓이: " + circleArea);
 
 //공의 속도를 변환하는 프로그램 작성
-//km -> mile 
+//km -> mile, 변환상수 = 1.609, 1mile = 1.609km
+//마일 = 킬로미터 / 1.609
 let kph, mph;
 const RATE_KPH_MPH = 1.609;
+//입력
+kph = prompt("공의 속도를 입력하세요(km/h)", "100");
+kph = parseFloat(kph);  //문자를 실수로 변환
 
-kph=prompt("공의 속도: ");
-kph=parseFloat(kph);
-
+//연산
 mph = kph / RATE_KPH_MPH;
+//kph = mph * 1.609;
 
-document.write(kph + "km는 " + mph.toFixed(2) + " 마일입니다.")
+//출력 - 자리수 설정함수: toFixed(자리수)
+document.write(kph + "km는 " + mph.toFixed(2) + "mile입니다.");

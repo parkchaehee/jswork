@@ -5,36 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>반복문 - for문</title>
   <script>
-    
-    //1~10까지 출력
+    //1부터 10까지 출력
     //for(초기값; 종료값; 증감값)
     /*for(var i=1; i<=10; i++){
       console.log(i);
     }*/
-    /*let total = 0;
+    //1부터 10까지 합계 계산하기
+    let total = 0;
     for(var i=1; i<=10; i++){
       total += i;
-      console.log("i= " + i + ", total= " + total)
+      console.log("i=" + i + ", total=" + total);
     }
-    console.log("합계: " + total);*/
+    console.log("합계: " + total);
 
     //구구단 6단 출력하기
-    //let dan = 6;
-    /*for(i=1; i<10; i++){
-      sum = dan*i;
-      document.write(dan+ " x " + i + " = " + sum +"<br>");
-    }*/
-
-    for(var i=1; i<10; i++){
-      i++;
-      for(var j=1; j<9; j++){
-        j++;
-        sum2 = i*j;
-        document.write(i + " x " + j + " = " + sum2+"<br>");
-      }
+    /*
+      6 x 1 = 6 * 1
+      6 x 2 = 6 * 2
+      6 x 3 = 6 * 3
+      ...
+      6 x 9 = 6 * 9
+    */
+    let dan = 6;
+    for(var i = 1; i <= 9; i++){
+      console.log(dan + " x " + i + " = " + (6 * i));
     }
-   
-
   </script>
 </head>
 <body>
