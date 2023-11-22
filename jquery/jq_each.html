@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>제이쿼리 사용</title>
+  <script src="js/jquery-3.7.1.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("button").click(function(){
+        //index는 0번부터 시작
+        $("li").each(function(index, element){
+          alert(index + ": " + $(this).text());
+          console.log(index + ": " + $(this).text()) //li의 내용을 text()로 바꿈
+        })
+      })
+    })
+  </script>
+</head>
+<body>
+  <button>알림창 실행</button>
+
+  <ul>
+    <li>coffee</li>
+    <li>milk</li>
+    <li>tea</li>
+  </ul>
+</body>
+</html>
