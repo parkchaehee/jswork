@@ -27,29 +27,30 @@
     document.write(numbers + "<br>");
     console.log(numbers);
 
-    //전체 값 조회
+    //전체 값 조회 - 중첩 for(행, 열)
     for(let i=0; i<numbers.length; i++){
       for(let j=0; j<numbers[i].length; j++){
-        document.write(numbers[i][j] + ' ')
+        document.write(numbers[i][j] + ' ');
       }
       document.write("<br>");
     }
 
     //개수, 합계, 평균
-    let count = 0;//개수
-    let sum = 0; //합계
-    let avg;
+    let count = 0; //개수
+    let sum = 0;   //합계
+    let avg;       //평균
     for(let i=0; i<numbers.length; i++){
       for(let j=0; j<numbers[i].length; j++){
         count += 1;
         sum += numbers[i][j];
       }
     }
-    // avg = sum / count;
+    //avg = sum / count;
     avg = sum / (numbers[0].length + numbers[1].length);
+
     document.write("개수: " + count + "<br>");
-    document.write("합계: " + sum + "<br>");
-    document.write("평균: " + avg + "<br>");
+    document.write("합계: " +  sum + "<br>")
+    document.write("평균: " +  avg + "<br>")
   </script>
 </body>
 </html>

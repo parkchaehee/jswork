@@ -11,16 +11,12 @@ let shippingAddr = document.getElementById("shippingAddr");
 
 check.addEventListener('click', function(){
   if(check.checked){//check.checked == true
-    shippingName.value = billingName.value; //주문정보의 이름을 배송정보의 이름에 넣기
+    shippingName.value = billingName.value;  //주문정보의 이름을 배송정보의이름에 저장
     shippingTel.value = billingTel.value;
     shippingAddr.value = billingAddr.value;
-  }else{//check.checked == false
-    shippingName.value = ""; 
+  }else{ //check.checked == false
+    shippingName.value = "";
     shippingTel.value = "";
     shippingAddr.value = "";
   }
 })
-
-
-
-

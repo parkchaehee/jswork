@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>제이쿼리 attr()함수 사용</title>
+  <title>제이쿼리 attr() 함수</title>
   <script src="js/jquery-3.7.1.js"></script>
   <script>
-    //attr() - 속성을 변경할 수 있음
+    //attr() - 개체의 속성을 변경할 수 있음
     $(document).ready(function(){
       $(".big").click(function(){
-        $("img").attr("width", "450");  //너비를 450px 변경
-      })
+        $("img").attr("width", "450");  //너비를 450px로 변경
+      });
       $(".small").click(function(){
-        $("img").attr("width", "250");  //너비를 250px 변경
-      })
+        $("img").attr("width", "350");  //너비를 450px로 변경
+      });
     })
   </script>
 </head>
